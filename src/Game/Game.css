@@ -1,0 +1,15 @@
+.Game
+{
+    width:73rem;
+    margin-left:13rem;
+    margin-top:5rem;
+    text-align: center;
+    background-color: black;
+}
+.h1
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    color: limegreen;
+}
+
