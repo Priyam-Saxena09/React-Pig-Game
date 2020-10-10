@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Aux from "../Auxilary/Auxilary"
 import Player from "../Player/Player"
 import Controls from "../Controls/Controls"
 import classes from "./Game.css"
@@ -105,6 +106,8 @@ class Game extends Component{
             }
         }
         return(
+            <Aux>
+                <h1 className={classes.h}>Welcome To The-Pig-Game</h1>
             <div className={classes.Game}>
                 <h1 className={classes.h1} style={style}>{h}</h1>
             <div className="d-flex flex-row border border-success justify-content-center align-items-center mt-5">
@@ -113,6 +116,7 @@ class Game extends Component{
             <Player name="Player-2" total={this.state.player2.total} round={this.state.player2.round} />
             </div>
             </div>
+            </Aux>
         )
     }
 }
