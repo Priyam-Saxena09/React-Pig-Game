@@ -3,6 +3,7 @@ import Aux from "../Auxilary/Auxilary"
 import Player from "../Player/Player"
 import Controls from "../Controls/Controls"
 import classes from "./Game.css"
+import Rules from "../Rules/Rules"
 
 class Game extends Component{
     state = {
@@ -108,6 +109,7 @@ class Game extends Component{
         return(
             <Aux>
                 <h1 className={classes.h}>Welcome To The-Pig-Game</h1>
+                <h2 className={classes.h2}>Click to see the <Rules /></h2>
             <div className={classes.Game}>
                 <h1 className={classes.h1} style={style}>{h}</h1>
             <div className="d-flex flex-row border border-success justify-content-center align-items-center mt-5">
